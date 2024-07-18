@@ -28,36 +28,44 @@ body {
 
 .body-parts {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-around;
   height: 500px;
   width: 50%;
 }
 
-.box{
+.box img{
   height: 125px;
   width: 125px;
+  background-repeat: no-repeat;
+  object-fit: contain;
 }
 
 
 
 /*herb-card styling*/
 .content-placeholder{
+  width: 50%;
+}
+
+.cards{
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  width: 50%;
 }
 
 .herb-card{
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   overflow: hidden;
+  height: 250px;
+  width: 250px;
   
 }
 
 .card-header {
-  height: 200px;
+  height: 50%;
+  width: 100%;
 }
 
 .card-content {
@@ -65,6 +73,8 @@ body {
   flex-direction: column;
   background-color: #fff;
   padding: 30px;
+  height: 50%;
+  width: 100%;
 }
 
 .herb-title {
