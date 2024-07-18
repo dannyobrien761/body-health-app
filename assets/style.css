@@ -4,6 +4,16 @@
   box-sizing: border-box;
 }
 
+h3{
+  font-size: medium;
+  color: black;
+}
+
+p{
+  font-size: small;
+  color: black;
+}
+
 body {
   background-color: #ecf0f1;
   font-family: 'Roboto', sans-serif;
@@ -65,6 +75,12 @@ body {
 
 .card-header {
   height: 50%;
+  width: 100%;
+}
+
+.card-header img {
+  object-fit: cover;
+  height: 100%;
   width: 100%;
 }
 
