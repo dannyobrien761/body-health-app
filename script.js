@@ -1,13 +1,12 @@
-const herbImg = document.querySelector('.card-header');
+
+/*const herbImg = document.querySelector('.card-header');
 const title = document.getElementById('herb-title');
 const benifits = document.getElementById('herb-benifits');
 const eyeBox = document.getElementById('eye');
 const hairBox = document.getElementById('hair');
 
-
 eyeBox.addEventListener('click', () => getHerb('eyeHerb'));
 hairBox.addEventListener('click', () => getHerb('hairHerb'));
-
 
 function getEyeCard(){
     herbImg.innerHTML = 
@@ -25,7 +24,6 @@ function getHairCard(){
 
 }
 
-
 const getHerb = (boxChoice) => {
 
     if (boxChoice === 'eyeHerb' ) {
@@ -35,3 +33,4 @@ const getHerb = (boxChoice) => {
         getHairCard();
     }
 };
+ */
