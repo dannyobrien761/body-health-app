@@ -6,7 +6,42 @@ document.addEventListener('DOMContentLoaded', () => {
 // Function to update herb cards with given herb information
 function updateHerbCards(herbs) {
     console.log('Updating herb cards', herbs);
+    const cardsContainer = document.querySelector('.cards');
     const herbCards = document.querySelectorAll('.herb-card');
+
+    // If there are not enough herb-card elements, create new ones
+    if (herbCards.length < herbs.length) {
+        for (let i = herbCards.length; i < herbs.length; i++) {
+            const newCard = document.createElement('div');
+            newCard.classList.add('herb-card');
+
+            const header = document.createElement('div');
+            header.classList.add('card-header');
+            header.innerHTML = '&nbsp;';
+
+            const content = document.createElement('div');
+            content.classList.add('card-content');
+
+            const title = document.createElement('h3');
+            title.classList.add('herb-title');
+            title.innerHTML = '&nbsp;';
+
+            const benefits = document.createElement('p');
+            benefits.classList.add('herb-benefits');
+            benefits.innerHTML = '&nbsp;';
+
+            content.appendChild(title);
+            content.appendChild(benefits);
+            newCard.appendChild(header);
+            newCard.appendChild(content);
+
+            cardsContainer.appendChild(newCard);
+        }
+        // Re-select the herbCards after adding new ones
+        herbCards = document.querySelectorAll('.herb-card');
+    }
+
+
     herbCards.forEach((card, index) => {
         const header = card.querySelector('.card-header');
         const title = card.querySelector('.herb-title');
@@ -16,7 +51,12 @@ function updateHerbCards(herbs) {
             header.innerHTML = `<img src="${herbs[index].imageUrl}" alt="Herb image">`;
             title.innerHTML = herbs[index].title;
             benefits.innerHTML = herbs[index].benefits;
-        } 
+        } else {
+            // Clear the card if there's no corresponding herb
+            header.innerHTML = '&nbsp;';
+            title.innerHTML = '&nbsp;';
+            benefits.innerHTML = '&nbsp;';
+        }
     });
 }
 
@@ -258,8 +298,12 @@ function getRedBloodCellHerbs() {
             imageUrl: 'https://plus.unsplash.com/premium_photo-1673264303561-de2ab31df03c?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
             title: 'breathwork',
             benefits: 'whimhoff'
+        },
+        {
+            imageUrl: 'https://plus.unsplash.com/premium_photo-1673264303561-de2ab31df03c?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+            title: 'whatworks',
+            benefits: 'who'
         }
-        
     ];
 
 }
