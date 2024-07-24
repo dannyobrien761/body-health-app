@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
 function updateHerbCards(herbs) {
     console.log('Updating herb cards', herbs);
     const cardsContainer = document.querySelector('.cards');
-    const herbCards = document.querySelectorAll('.herb-card');
+    let herbCards = document.querySelectorAll('.herb-card');
 
     // If there are not enough herb-card elements, create new ones
     if (herbCards.length < herbs.length) {
@@ -45,17 +45,27 @@ function updateHerbCards(herbs) {
     herbCards.forEach((card, index) => {
         const header = card.querySelector('.card-header');
         const title = card.querySelector('.herb-title');
-        const benefits = card.querySelector('.herb-benifits');
+        const benefits = card.querySelector('.herb-benefits');
 
         if (header && title && benefits && herbs[index]) {
             header.innerHTML = `<img src="${herbs[index].imageUrl}" alt="Herb image">`;
             title.innerHTML = herbs[index].title;
             benefits.innerHTML = herbs[index].benefits;
         } else {
-            // Clear the card if there's no corresponding herb
-            header.innerHTML = '&nbsp;';
-            title.innerHTML = '&nbsp;';
-            benefits.innerHTML = '&nbsp;';
+           // Log which elements are missing if there's an issue
+           console.error('Missing element(s) for herb card index:', index);
+           console.log('header:', header);
+           console.log('title:', title);
+           console.log('benefits:', benefits);
+           console.log('herbs[index]:', herbs[index]);
+
+          // Remove the card if there's no corresponding herb or element is missing
+            card.remove();  
+
+           // Clear the card if there's no corresponding herb or element is missing
+           //if (header) header.innerHTML = '&nbsp;';
+           //if (title) title.innerHTML = '&nbsp;';
+           //if (benefits) benefits.innerHTML = '&nbsp;';
         }
     });
 }
