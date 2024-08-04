@@ -51,10 +51,9 @@ The live link can be found here -
 ### Content 
 [content placeholder- Brad traversy 50projects50days](https://github.com/bradtraversy/50projects50days/tree/master/content-placeholder)
 
-the 50projects in 50 days project for content placeholder by brad traversy link above was the inspiration for the html structure for the content 'herb-cards' and ome of the js code described below. 
+I took inspiration from the "content placeholder" project from the 50projects in 50 days repository  by brad traversy (link above). The inspiration taken as outlined below and in the code comments for specific reference is clearly defined. Please see below the html structure for the content 'herb-cards' and one of the js code snippets described below. 
 
-the html 
-snip from the content placeholder project:
+#### the html snip from the content placeholder project:
 <body>
     <div class="card">
       <div class="card-header animated-bg" id="header">&nbsp;</div>
@@ -84,19 +83,47 @@ snip from the content placeholder project:
     <script src="script.js"></script>
   </body>
 
+The inspiration I took :
+  i used the  &nbsp; featured above to fill the h3 and p elements in my html code and use this method of then writing a js function to change the html tags content (seen below).
 
-  i used the  &nbsp; featured above to fill the h3 and p elements in my html code and use this method of then writing a js function to change the html tags content.
-
-### excerpt from content placeholder js file:
+### excerpt from 'content placeholder' js file:
 ![content placeholder js file inspiration](image-3.png)
 
-### Excerpt from my version 1 of js file in my body health app:
+### Excerpt from my initial solution to show the appropriate herb cards on click:
 
-![version one of js for body health app](image.png)
+![commit history 'js code for 2 body parts and 1 card'](image.png)
 
 the "Content-placeholder" which which was an inspiration for the JS code that would once the body parts would be selected would display them onto a Content-card. I took the code from the above and customized it to include 
 
+### inspiration taken from the below project in script.js file :
+
+[3d-boxes-background- Brad traversy 50projects50days](https://github.com/bradtraversy/50projects50days/tree/master/3d-boxes-background)
 
 
+```javaScript
+  function createBoxes() {
+    for (let i = 0; i < 4; i++) {
+      for (let j = 0; j < 4; j++) {
+        const box = document.createElement('div')
+        box.classList.add('box')
+        box.style.backgroundPosition = `${-j * 125}px ${-i * 125}px`
+        boxesContainer.appendChild(box)
+      }
+    }
+  }
+  createBoxes()
+
+```
+
+#### my code snippet used in my final version to create new herbcards if there are more herbs than cards on display 
+
+```javaScript
+// If there are not enough herb-card elements, create new ones
+    if (herbCards.length < herbs.length) {
+        for (let i = herbCards.length; i < herbs.length; i++)  {
+            const newCard = document.createElement('div');
+            newCard.classList.add('herb-card');`
+```
+i used the above for loop logic and the document.createElement method 
 
 ### Media
