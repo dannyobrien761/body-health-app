@@ -20,7 +20,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
   margin: 0;
 }
 
@@ -28,7 +27,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100vh;
     width: 100vw;
     margin-top: 50px;
     
@@ -55,22 +53,27 @@ body {
 .body-parts {
   display: flex;
   flex-wrap: wrap;
-  margin: 20px 50px;
+  margin: 0px 50px;
   gap: 20px;
 }
 
 .box{
   flex-basis:100px ;
   flex-grow: 1;
+ 
 }
 
 
+
 .box img{
+  flex-basis:100px ;
+  flex-grow: 1;
   max-height: 125px;
   max-width: 125px;
   background-repeat: no-repeat;
   object-fit: contain;
 }
+
 
 
 /*herb-card styling*/
@@ -120,14 +123,14 @@ body {
   height: 20px;
   margin: 0;
 }
-/*
+
 @media (max-width: 100px) {
   #body-part-title {
     font-size: 18px; 
     margin: 50px;
   }
 
-  .body-parts {
+  .body-part-container{
     flex-direction: column; 
     align-items: center;
   }
@@ -135,36 +138,3 @@ body {
 
 
 }
-
- media query: laptop and desktop(992px and up)
-@media screen and (min-width:992px) {
-
- 
-
-  .box img{
-    height: 250px;
-    width: 250px;
-  
-  }
-  
-
-
-}
-
-
-media query: laptop and desktop(1200px and up)
-@media screen and (min-width:1200px) {
-
- 
-
-  .box img{
-    height: 225px;
-    width: 225px;
-  
-  }
-  
-
-
-}
-*/
-
