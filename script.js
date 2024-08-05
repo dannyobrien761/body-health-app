@@ -169,14 +169,28 @@ function getBrainHerbs() {
         {
             imageUrl: 'https://images.unsplash.com/photo-1501004318641-b39e6451bec6',
             title: 'Resveratrol',
-            benefits: 'Promotes hair growth'
+            benefits: "antioxidant and anti-inflammatory properties to protect you against diseases like cancer, diabetes, and Alzheimer's disease"
         },
         {
             imageUrl: 'https://plus.unsplash.com/premium_photo-1673264303561-de2ab31df03c?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
             title: 'Green-Tea',
-            benefits: 'Stimulates scalp'
+            benefits: 'reduces inflamation, after head injury'
+        },
+        {
+            imageUrl: 'https://plus.unsplash.com/premium_photo-1673264303561-de2ab31df03c?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+            title: 'Fasting',
+            benefits: 'Clear excess mucus accumilation, increases clarity and reduces brain fog'
+        },
+        {
+            imageUrl: 'https://plus.unsplash.com/premium_photo-1673264303561-de2ab31df03c?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+            title: 'Rosemary',
+            benefits: 'Stimulates scalp, improving circulation'
+        },
+        {
+            imageUrl: 'https://plus.unsplash.com/premium_photo-1673264303561-de2ab31df03c?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+            title: 'Cayenne and Ginger',
+            benefits: 'Sends Blood to the head, improving circulation and clearing brain fog'
         }
-        
     ];
 
 }
