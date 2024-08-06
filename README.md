@@ -126,4 +126,46 @@ the "Content-placeholder" which which was an inspiration for the JS code that wo
 ```
 i used the above for loop logic and the document.createElement method 
 
+
+[Expanding Cards- Brad traversy 50projects50days](https://github.com/bradtraversy/50projects50days/blob/master/expanding-cards/script.js)
+
+is used the following js code from the above git hub account. I used the code to add the 'active' css class to the selected body part box element in my project so once the body part is selected it would highlight the box and give refference for users from which body part they clicked and the herbs associated with it. 
+
+```javaScript
+const panels = document.querySelectorAll('.panel')
+
+panels.forEach(panel => {
+    panel.addEventListener('click', () => {
+        removeActiveClasses()
+        panel.classList.add('active')
+    })
+})
+
+function removeActiveClasses() {
+    panels.forEach(panel => {
+        panel.classList.remove('active')
+    })
+}
+
+```
+#### My code for reference is as follows: 
+
+```javaScript
+/another event listener for box elements to highlight once selected
+const boxes = document.querySelectorAll('.box');
+
+boxes.forEach(box => {
+    box.addEventListener('click', () =>{
+        removeActiveClasses();
+        box.classList.add('active');
+    });
+})
+
+function removeActiveClasses() {
+    boxes.forEach(box => {
+        box.classList.remove('active');
+    });
+};
+```
+
 ### Media
