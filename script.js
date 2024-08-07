@@ -113,6 +113,7 @@ document.querySelectorAll('.box').forEach(box => {
 
 
 //another event listener for box elements to highlight once selected
+// code snippet taken from expanding cards project from brad traversy and referenced in ReadMe
 const boxes = document.querySelectorAll('.box');
 
 boxes.forEach(box => {
