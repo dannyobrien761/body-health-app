@@ -129,6 +129,14 @@ body {
   margin: 0;
 }
 
+.herb-link {
+  display: block;
+  margin-top: 10px;
+  color: #3498db;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
 @media (max-width: 200px) {
   #body-part-title {
     font-size: 18px;

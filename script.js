@@ -30,8 +30,15 @@ function updateHerbCards(herbs) {
             benefits.classList.add('herb-benefits');
             benefits.innerHTML = '&nbsp;';
 
+            const link = document.createElement('a');
+            link.classList.add('herb-link');
+            link.href = '#';
+            link.target = '_blank';
+            link.innerHTML = '&nbsp;';
+
             content.appendChild(title);
             content.appendChild(benefits);
+            content.appendChild(link);
             newCard.appendChild(header);
             newCard.appendChild(content);
 
@@ -46,11 +53,16 @@ function updateHerbCards(herbs) {
         const header = card.querySelector('.card-header');
         const title = card.querySelector('.herb-title');
         const benefits = card.querySelector('.herb-benefits');
+        const link = card.querySelector('.herb-link');
 
         if (header && title && benefits && herbs[index]) {
             header.innerHTML = `<img src="${herbs[index].imageUrl}" alt="Herb image">`;
             title.innerHTML = herbs[index].title;
             benefits.innerHTML = herbs[index].benefits;
+            link.href = herbs[index].url;
+            link.innerHTML = 'Shop here';
+
+
         } else {
            // Log which elements are missing if there's an issue
            console.error('Missing element(s) for herb card index:', index);
@@ -181,32 +193,38 @@ function getBrainHerbs() {
         {
             imageUrl: 'https://images.unsplash.com/photo-1509210459313-17feefdff5cd?q=80&w=2036&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
             title: 'Skullcap',
-            benefits: 'Cleans and strengthens hair'
+            benefits: 'Cleans and strengthens hair',
+            url: 'https://www.amazon.co.uk/'
         },
         {
             imageUrl: 'https://images.unsplash.com/photo-1501004318641-b39e6451bec6',
             title: 'Resveratrol',
-            benefits: "antioxidant and anti-inflammatory properties to protect you against diseases like cancer, diabetes, and Alzheimer's disease"
+            benefits: "antioxidant and anti-inflammatory properties to protect you against diseases like cancer, diabetes, and Alzheimer's disease",
+            url: 'https://www.amazon.co.uk/'
         },
         {
             imageUrl: 'https://plus.unsplash.com/premium_photo-1673264303561-de2ab31df03c?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
             title: 'Green-Tea',
-            benefits: 'reduces inflamation, after head injury'
+            benefits: 'reduces inflamation, after head injury',
+            url: 'https://www.amazon.co.uk/'
         },
         {
             imageUrl: 'https://plus.unsplash.com/premium_photo-1673264303561-de2ab31df03c?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
             title: 'Fasting',
-            benefits: 'Clear excess mucus accumilation, increases clarity and reduces brain fog'
+            benefits: 'Clear excess mucus accumilation, increases clarity and reduces brain fog',
+            url: 'https://www.amazon.co.uk/'
         },
         {
             imageUrl: 'https://plus.unsplash.com/premium_photo-1673264303561-de2ab31df03c?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
             title: 'Rosemary',
-            benefits: 'Stimulates scalp, improving circulation'
+            benefits: 'Stimulates scalp, improving circulation',
+            url: 'https://www.amazon.co.uk/'
         },
         {
             imageUrl: 'https://plus.unsplash.com/premium_photo-1673264303561-de2ab31df03c?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
             title: 'Cayenne and Ginger',
-            benefits: 'Sends Blood to the head, improving circulation and clearing brain fog'
+            benefits: 'Sends Blood to the head, improving circulation and clearing brain fog',
+            url: 'https://www.amazon.co.uk/'
         }
     ];
 
