@@ -98,7 +98,7 @@ body {
   border-radius: 10px;
   flex-basis: 150px;
   flex-grow: 1;
-  max-height: 300px;
+  max-height: 350px;
   max-width: 250px;
 
 }
@@ -117,6 +117,7 @@ body {
 .card-content {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   background-color: #fff;
   text-align: center;
   padding: 10px;
@@ -135,6 +136,7 @@ body {
   color: #3498db;
   text-decoration: underline;
   font-weight: bold;
+  font-size: small;
 }
 
 @media (max-width: 200px) {
