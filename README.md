@@ -23,6 +23,8 @@ herbs for ailments feature allows you to select a body part say the 'eye' and re
 ### Features Left to Implement
 Once this would be implemented into an e-commerce site I would put in an add to basket button simply on the herb-card itself to allow for a seamless experience.
 
+add collapsing images for the body-parts categorys. When you click the bodypart name it would expand and show the image in full, associated herb-cards, all other image boxes would currently only display collapsed image and title of category.This would also allow for more room in the viewport for smaller screen experiences and visual keep tract of which category (body-part) you are currently looking at rather than the option I choose which was highlighting the box and keep the structure of the box selection unchanged. 
+
 
 ## Testing 
 
