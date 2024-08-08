@@ -44,8 +44,9 @@ body {
 }
 
 #body-part-title {
+  display:flex;
+  align-self: flex-start;
   font-size: 24px;
-  text-align: center;
 }
 
 .body-parts {
@@ -54,17 +55,11 @@ body {
   gap: 10px;
 }
 
-
-
-
-
 .box {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
 
 }
-
-
 
 .box img {
   flex-basis: 100px;
