@@ -2,12 +2,18 @@
 ## Body Health App Project Outline
 
 ### Project Description:
-
+An App that categorizes herbs by their effect on different body-parts. You choose the desired body-part you would like to improve or heal and you get associated herbs that would help with that desired effect.
 
 ### Project Goals:
+The overall goal of the project is to create an app that increase the knowlege to action side of an e-commerce business. To build a user focused, interactive app that improves the e-commerce experience for categorization of products.
+ Categorizing the products by there uses and effects. Rather than a user scrolling through a normal e-commerce store where they would click on certain products and find out there uses and effects then click out of the product page and continue scrolling untill they find what they are looking for. I came up with a solution to give a quick product introductory, in the form of a image, small message of uses and a link to the product(which would then go to the product e-commerce page).
 
+### purpose
+To inform users of benefits of products,categorize those products and have seamless user experience.
 
 ### Target Audience:
+E-commerce stores particularly health stores that are usually trying to solve problems for users. For example this can be used for a wide range of businesses, in this case, I choose a herb selling business that has the herbs categorized by their effect on different body-parts. You choose the desired body-part you would like to improve or heal and you get associated herbs that would help with that desired effect. I came across this probelem in health stores in particular where they would have a wide range of vitamins and supplements all that have a wide range of effects that cross over for there benificial properties. I always end up getting lost among the choices. So I decided to create a system that if you are looking to, clear your skin for example you can simply choose the skin body-part and you get associated herbs that improve your skin. Some of the herbs shown might have multiple benefits and therefore be associated with multiple body-parts. It is a user focused interactive e-commerce experience rather than the normal methods of categorizing products into product pages and repeating a lot of the same products accross multiple pages. In brick and mortar health stores this app would essentially be replaced with a knowledgable shop assistant that can talk to customers about what they are looking for and inform them of the possible choices of products they have on display. 
+
 
 ![responsivity Mockup]()
 
@@ -15,7 +21,7 @@
 herbs for ailments feature allows you to select a body part say the 'eye' and returns herb cards which gives information on specific herbs that have a variety of different medicinal qualities for the eye or whicherver body part is selected within the frame. 
 
 ### Features Left to Implement
-
+Once this would be implemented into an e-commerce site I would put in an add to basket button simply on the herb-card itself to allow for a seamless experience.
 
 
 ## Testing 
