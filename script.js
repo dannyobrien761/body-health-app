@@ -203,25 +203,25 @@ function getBrainHerbs() {
             url: 'https://www.amazon.co.uk/'
         },
         {
-            imageUrl: 'https://plus.unsplash.com/premium_photo-1673264303561-de2ab31df03c?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+            imageUrl: 'https://images.unsplash.com/photo-1701520839071-55bdfe64c5ed?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
             title: 'Green-Tea',
             benefits: 'reduces inflamation, after head injury',
             url: 'https://www.amazon.co.uk/'
         },
         {
-            imageUrl: 'https://plus.unsplash.com/premium_photo-1673264303561-de2ab31df03c?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+            imageUrl: 'https://images.unsplash.com/photo-1559839914-17aae19cec71?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
             title: 'Fasting',
             benefits: 'Clear excess mucus accumilation, increases clarity and reduces brain fog',
             url: 'https://www.amazon.co.uk/'
         },
         {
-            imageUrl: 'https://plus.unsplash.com/premium_photo-1673264303561-de2ab31df03c?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+            imageUrl: 'https://plus.unsplash.com/premium_photo-1661697466676-200ffe1cbf1e?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
             title: 'Rosemary',
             benefits: 'Stimulates scalp, improving circulation',
             url: 'https://www.amazon.co.uk/'
         },
         {
-            imageUrl: 'https://plus.unsplash.com/premium_photo-1673264303561-de2ab31df03c?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+            imageUrl: 'https://images.unsplash.com/photo-1599940859674-a7fef05b94ae?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
             title: 'Cayenne and Ginger',
             benefits: 'Sends Blood to the head, improving circulation and clearing brain fog',
             url: 'https://www.amazon.co.uk/'
@@ -256,7 +256,7 @@ function getTeethHerbs() {
 function getHeartHerbs() {
     return [
         {
-            imageUrl: 'https://images.unsplash.com/photo-1509210459313-17feefdff5cd?q=80&w=2036&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+            imageUrl: 'https://images.unsplash.com/photo-1475140604894-b4aaba075542?q=80&w=1423&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
             title: 'Dandelion',
             benefits: 'Cleans and strengthens hair'
         },
@@ -266,7 +266,7 @@ function getHeartHerbs() {
             benefits: 'Promotes hair growth'
         },
         {
-            imageUrl: 'https://plus.unsplash.com/premium_photo-1673264303561-de2ab31df03c?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+            imageUrl: 'https://images.unsplash.com/photo-1701520839071-55bdfe64c5ed?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
             title: 'Green-Tea',
             benefits: 'Stimulates scalp'
         }
@@ -322,17 +322,17 @@ function getDigestionHerbs() {
 function getLymphaticHerbs() {
     return [
         {
-            imageUrl: 'https://images.unsplash.com/photo-1509210459313-17feefdff5cd?q=80&w=2036&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+            imageUrl: 'https://plus.unsplash.com/premium_photo-1664200731344-ef1ad87aa0a6?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
             title: 'polk root',
             benefits: 'Cleans lungs'
         },
         {
-            imageUrl: 'https://images.unsplash.com/photo-1501004318641-b39e6451bec6',
-            title: 'movement',
+            imageUrl: 'https://plus.unsplash.com/premium_photo-1678653651270-9f0f68119d99?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+            title: 'wormwood',
             benefits: 'Antiviral and Antibacterial properties'
         },
         {
-            imageUrl: 'https://plus.unsplash.com/premium_photo-1673264303561-de2ab31df03c?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+            imageUrl: 'https://images.unsplash.com/photo-1447452001602-7090c7ab2db3?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
             title: 'yoga',
             benefits: 'relieve congestion'
         }
@@ -354,14 +354,14 @@ function getRedBloodCellHerbs() {
             benefits: 'Antiviral and Antibacterial properties'
         },
         {
-            imageUrl: 'https://plus.unsplash.com/premium_photo-1673264303561-de2ab31df03c?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-            title: 'breathwork',
-            benefits: 'whimhoff'
+            imageUrl: 'https://plus.unsplash.com/premium_photo-1675720902465-82781aaa96bb?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+            title: 'Blackwalnut',
+            benefits: 'removes parasites'
         },
         {
-            imageUrl: 'https://plus.unsplash.com/premium_photo-1673264303561-de2ab31df03c?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-            title: 'whatworks',
-            benefits: 'who'
+            imageUrl: 'https://plus.unsplash.com/premium_photo-1674347954785-7604a0220776?q=80&w=1376&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+            title: 'Pumkin Seeds',
+            benefits: 'Fibre and helps remove parasites'
         }
     ];
 
