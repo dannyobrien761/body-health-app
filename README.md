@@ -22,14 +22,42 @@ E-commerce stores particularly health stores that are usually trying to solve pr
 ## Features
 **Body-part selection** feature allows you to select a body part say the 'eye' and returns herb cards which gives information on specific herbs that have a variety of different medicinal qualities for the eye or whicherver body part is selected within the frame. 
 
-**The body-part is then highlighted** and herbs associated with improvement are listed under the title 'herbs to improve the body-part'.
+**event listensers for body parts** so once clicked the herbs associated with the 'improvement' are listed under the title 'herbs to improve the body-part'.
 
 **updated herb cards** :herb cards appear only if they are in the index of the associated body-part. Herb cards will be removed if there is not an associated herb to fill them.
 
+**highliting body part category choosen**
+the first solution I choose to make this feature was simply highlighting the box changing the box color on the active class when clicked and keep the structure of the box selection unchanged. 
+
+then I decided to add to the feature and make a transition effect to make the box larger when the box is clicked. The box once clicked changes to the active css class that has a different flex property to the box class before it is clicked therefore it has a transition with an ease in effect.
+
+```css
+.box {
+  transition: all 700ms ease-in;
+}
+
+.box.active {
+  flex: 1;
+}
+.body-parts .box:not(.active) {
+  flex: 0.8; /* Shrink non-active boxes */
+}
+
+
+```
+
 **responsive design** to allow for preferred user experience, body part and herb card containers are made smaller or larger depending on screen size.
 
+I used the below css to remove the images from the body part list on the smaller screens. Within the media query for screen sizes below 400px I was able to maximise the use of the space allowing for better user experience.
+```css
+.box img {
+    display: none;
+  }
+```
+
+
 ### Features Left to Implement
-Once this would be implemented into an e-commerce site I would put in an add to basket button simply on the herb-card itself to allow for a seamless experience.
+Once this would be implemented into an e-commerce site I would put in an add to basket button on the herb-card itself to allow for a seamless experience.
 
 add collapsing images for the body-parts categorys. When you click the bodypart name it would expand and show the image in full, associated herb-cards, all other image boxes would currently only display collapsed image and title of category.This would also allow for more room in the viewport for smaller screen experiences and visual keep tract of which category (body-part) you are currently looking at rather than the option I choose which was highlighting the box and keep the structure of the box selection unchanged. 
 
@@ -48,10 +76,13 @@ add collapsing images for the body-parts categorys. When you click the bodypart 
 - **HTML**
   - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fdannyobrien761.github.io%2Fbody-health-app%2F)
 - **CSS**
+- This document validates as CSS level 3 + SVG !
+[(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fdannyobrien761.github.io%2Fbody-health-app%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 - **CSS**
   
 - **Accessibility**
-  
+  - I confirm that with a accessibility score of over 90 in the lighthouse dev tools that the colors and fonts choosen are easy to read and accessible.
+![lighthouse scrore screenshot](/media/lighthouse-summary.png)
 ## Deployment
 
 This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub) 
@@ -132,7 +163,7 @@ the "Content-placeholder" which which was an inspiration for the JS code that wo
 
 ```
 
-#### my code snippet used in my final version to create new herbcards if there are more herbs than cards on display 
+#### my code snippet used in my final version to create new herbcards if there are more herbs, than cards on display 
 
 ```javaScript
 // If there are not enough herb-card elements, create new ones
@@ -146,7 +177,7 @@ i used the above for loop logic and the document.createElement method
 
 [Expanding Cards- Brad traversy 50projects50days](https://github.com/bradtraversy/50projects50days/blob/master/expanding-cards/script.js)
 
-is used the following js code from the above git hub account. I used the code to add the 'active' css class to the selected body part box element in my project so once the body part is selected it would highlight the box and give refference for users from which body part they clicked and the herbs associated with it. 
+I used the following js code from the above git hub account. I used the code to add the 'active' css class to the selected body part box element in my project so once the body part is selected it would highlight the box and give refference for users from which body part they clicked and the herbs associated with it. 
 
 ```javaScript
 const panels = document.querySelectorAll('.panel')
@@ -186,4 +217,23 @@ function removeActiveClasses() {
 ```
 
 ### Media
+
+I created the images for the body parts using the adobe firefly AI image generator to get images that were consistant in design, size, and specific to each body part.
+
+#### the images for the herbs were all souced on unsplash as follows:
+- [Patrick Hendry - Yoga Fog](https://unsplash.com/photos/person-doing-yoga-exercises-w5SgojGZooI)
+- [Unsplash+ In collaboration with Margaret Jaszowska](https://unsplash.com/photos/a-close-up-of-a-pile-of-seeds-bt1mUm-CLmM)
+- [Unsplash+
+In collaboration with Behnam Norouzi](https://unsplash.com/photos/a-close-up-of-a-mushroom-on-a-white-surface-ev3JZFuEvco)
+- [Unsplash+ In collaboration with Anna Jakutajc-Wojtalik](https://unsplash.com/photos/a-group-of-potted-plants-sitting-on-top-of-a-wooden-tray-Tk6mX-Xo7bc)
+- [Natalia Luchanko](https://unsplash.com/photos/yellow-petaled-flower-on-grass-04Nh3LC_EwM)
+- [Unsplash+ In collaboration with Getty Images](https://unsplash.com/photos/hands-in-gloves-potting-rosemary-plant-in-new-clay-pot-on-background-of-fresh-green-basil-plant-on-wooden-floor-repotting-and-cultivating-aromatic-herbs-at-home-horticulture-tfnaRJwiqfc)
+-[Kat von Wood](https://unsplash.com/photos/a-cup-of-tea-next-to-a-bowl-of-tea-and-a-book-M9BBRitwlDk)
+- [Laura Mitulla](https://unsplash.com/photos/rocks-glass-beside-half-empty-bottle-on-white-surface-7Zlds3gm7NU)
+- [Jocelyn Morales](https://unsplash.com/photos/brown-and-white-stone-fragment-trGaaSlz6d0)
+- [Unsplash+In collaboration with Nik](https://unsplash.com/photos/a-potted-plant-with-a-small-tree-in-it-slr66az0iRo)
+- [Unsplash+ In collaboration with Thomas Franke](https://unsplash.com/photos/a-close-up-of-a-bunch-of-green-leaves-nztbzUbyb9A)
+- [Heather Ford](https://unsplash.com/photos/selective-focus-photography-of-blue-petaled-flowers-in-clear-glass-jar-Tinbs_bjKxA)
+- [Priscilla Du Preez 🇨🇦](https://unsplash.com/photos/green-leafed-plants-on-white-background-INjdgkCwHp0)
+- [Markus Spiske](https://unsplash.com/photos/green-leaf-plants-ngP0x8HuPVM)
 
