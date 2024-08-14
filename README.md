@@ -46,7 +46,8 @@ add collapsing images for the body-parts categorys. When you click the bodypart 
 
 
 - **HTML**
-  
+  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fdannyobrien761.github.io%2Fbody-health-app%2F)
+- **CSS**
 - **CSS**
   
 - **Accessibility**

@@ -176,7 +176,7 @@ body {
   font-size: 12px;
 }
 
-@media (max-width: 250px) {
+@media (max-width: 400px) {
   #body-part-title,#content-title {
     font-size: 12px;
   }
@@ -207,7 +207,7 @@ body {
   .herb-title,
   .herb-link,
   p {
-    font-size: 8px; /* Scale down text sizes */
+    font-size: 10px; /* Scale down text sizes */
   }
   .cards {
     width: 50vw; /* Make cards fill the screen width */
