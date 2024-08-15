@@ -132,7 +132,7 @@ I took inspiration from the "content placeholder" project from the 50projects in
   </body>
 
 The inspiration I took :
-  i used the  &nbsp; featured above to fill the h3 and p elements in my html code and use this method of then writing a js function to change the html tags content (seen below).
+  i used the  ''>&nbsp<'' featured above to fill the h3 and p elements in my html code and use this method of then writing a js function to change the html tags content (seen below).
 
 ### excerpt from 'content placeholder' js file:
 ![content placeholder js file inspiration](/media/image-3.png)
@@ -141,7 +141,7 @@ The inspiration I took :
 
 ![commit history 'js code for 2 body parts and 1 card'](/media/image.png)
 
-the "Content-placeholder" which which was an inspiration for the JS code that would once the body parts would be selected would display them onto a Content-card. I took the code from the above and customized it to include 
+the "Content-placeholder" project above which inspired the code that once the body parts would be selected, would display them onto a Content-card. I took the code from the above and customized it to include a nodelist of 'herb information in my getHerb functions and then be inserted into the content cards with the same logic of the content placeholder project. eg title.innerHTML method.  
 
 ### inspiration taken from the below project in script.js file :
 

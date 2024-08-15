@@ -48,7 +48,7 @@ function updateHerbCards(herbs) {
         herbCards = document.querySelectorAll('.herb-card');
     }
 
-
+ 
     herbCards.forEach((card, index) => {
         const header = card.querySelector('.card-header');
         const title = card.querySelector('.herb-title');
@@ -74,10 +74,6 @@ function updateHerbCards(herbs) {
           // Remove the card if there's no corresponding herb or element is missing
             card.remove();  
 
-           // Clear the card if there's no corresponding herb or element is missing
-           //if (header) header.innerHTML = '&nbsp;';
-           //if (title) title.innerHTML = '&nbsp;';
-           //if (benefits) benefits.innerHTML = '&nbsp;';
         }
     });
 }
