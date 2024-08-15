@@ -63,12 +63,14 @@ add collapsing images for the body-parts categorys. When you click the bodypart 
 
 
 ## Testing 
+<ul>
+<li>I tested that this page works in different browsers chrome, Firefox, safari
+<li>I confirm that the herb cards and body part selection panel texts are all readable and easy to understand. 
+<li>I have tested and confirm the form works: clickable and actionable content, and perfroms as expected across multiple screen sizes.
+</ul>
 
 ### Bugs
-
-
-#### Solved bugs
-
+high payload from js script which delays the loading of herb card content
 
 ### Validator Testing
 
