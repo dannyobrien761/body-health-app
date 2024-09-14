@@ -17,7 +17,7 @@ To inform users of benefits of products,categorize those products and have seaml
 E-commerce stores particularly health stores that are usually trying to solve problems for users. For example this can be used for a wide range of businesses, in this case, I choose a herb selling business that has the herbs categorized by their effect on different body-parts. You choose the desired body-part you would like to improve or heal and you get associated herbs that would help with that desired effect. I came across this probelem in health stores in particular where they would have a wide range of vitamins and supplements all that have a wide range of effects that cross over for there benificial properties. I always end up getting lost among the choices. So I decided to create a system that if you are looking to, clear your skin for example you can simply choose the skin body-part and you get associated herbs that improve your skin. Some of the herbs shown might have multiple benefits and therefore be associated with multiple body-parts. It is a user focused interactive e-commerce experience rather than the normal methods of categorizing products into product pages and repeating a lot of the same products accross multiple pages. In brick and mortar health stores this app would essentially be replaced with a knowledgable shop assistant that can talk to customers about what they are looking for and inform them of the possible choices of products they have on display. 
 
 
-![responsivity Mockup](/media/amiresponsive.png)
+![responsivity Mockup](/assets/media-for--readme/amiresponsive.png)
 
 ## Features
 **Body-part selection** feature allows you to select a body part say the 'eye' and returns herb cards which gives information on specific herbs that have a variety of different medicinal qualities for the eye or whicherver body part is selected within the frame. 
@@ -84,7 +84,7 @@ high payload from js script which delays the loading of herb card content
   
 - **Accessibility**
   - I confirm that with a accessibility score of over 90 in the lighthouse dev tools that the colors and fonts choosen are easy to read and accessible.
-![lighthouse scrore screenshot](/media/lighthouse-summary.png)
+![lighthouse scrore screenshot](/assets/media-for--readme/lighthouse-summary.png)
 ## Deployment
 
 This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub) 
@@ -137,11 +137,11 @@ The inspiration I took :
   i used the  ''>&nbsp<'' featured above to fill the h3 and p elements in my html code and use this method of then writing a js function to change the html tags content (seen below).
 
 ### excerpt from 'content placeholder' js file:
-![content placeholder js file inspiration](/media/image-3.png)
+![content placeholder js file inspiration](/assets/media-for--readme/image-3.png)
 
 ### Excerpt from my initial solution to show the appropriate herb cards on click:
 
-![commit history 'js code for 2 body parts and 1 card'](/media/image.png)
+![commit history 'js code for 2 body parts and 1 card'](/assets/media-for--readme/image.png)
 
 the "Content-placeholder" project above which inspired the code that once the body parts would be selected, would display them onto a Content-card. I took the code from the above and customized it to include a nodelist of 'herb information in my getHerb functions and then be inserted into the content cards with the same logic of the content placeholder project. eg title.innerHTML method.  
 
