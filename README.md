@@ -54,7 +54,14 @@ I used the below css to remove the images from the body part list on the smaller
     display: none;
   }
 ```
+### updated code
+index.html 
+replaced the entire block that currently defines the hardcoded herb cards with just the single container <div class="cards"></div>
 
+herbData is now extracted away to its own data structure and file. and called into script.js for cleaner layout , flow and structure
+
+script.js
+now filters large objects of arrays in herb.js file by its category key by functions instead of lots of duplicate code as origionally implemented
 
 ### Features Left to Implement
 Once this would be implemented into an e-commerce site I would put in an add to basket button on the herb-card itself to allow for a seamless experience.
