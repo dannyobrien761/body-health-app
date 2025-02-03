@@ -7,6 +7,12 @@ document.querySelectorAll('.box').forEach(box => {
         const category = box.id;  // Get the category based on clicked body part
         const herbs = getHerbsByCategory(category);
         displayHerbs(herbs); // Display the herbs related to the body part
+
+        const boxes = document.querySelectorAll('.box');
+        // Remove active class from all boxes
+        boxes.forEach(b => b.classList.remove("active"));
+        // Add active class to the clicked box
+        box.classList.add("active");
     });
 });
 
