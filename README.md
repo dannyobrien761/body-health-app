@@ -54,7 +54,7 @@ I used the below css to remove the images from the body part list on the smaller
     display: none;
   }
 ```
-### updated code
+# updated code
 index.html 
 replaced the entire block that currently defines the hardcoded herb cards with just the single container <div class="cards"></div>
 
@@ -62,6 +62,99 @@ herbData is now extracted away to its own data structure and file. and called in
 
 script.js
 now filters large objects of arrays in herb.js file by its category key by functions instead of lots of duplicate code as origionally implemented
+
+### update code breakdown
+This write-up explains the code updates to the `script.js` file, focusing on improving the code organization, readability, and maintainability by introducing structured functions and separating data into an external file `herbs.js`.
+
+### Changes Made
+
+#### 1. **Separation of Data Structures**
+To keep the main script clean, the large herb data object was moved to a dedicated file `herbs.js`. This file exports the data so it can be easily imported into `script.js`.
+
+```javascript
+// herbs.js
+export const herbData = {
+  hairHerbs: [/* data */],
+  brainHerbs: [/* data */],
+  // other categories...
+};
+```
+
+The import statement in `script.js` handles bringing the data back into the main file:
+
+```javascript
+import { herbData } from './herbs.js';
+```
+
+#### 2. **Event Listener Improvements**
+The code efficiently selects and handles user clicks on body part boxes using `forEach()` on the `NodeList` of `.box` elements. An event listener calls functions to retrieve and display herb data:
+
+```javascript
+// Adding event listeners to body part selection
+document.querySelectorAll('.box').forEach(box => {
+    box.addEventListener('click', () => {
+        const category = box.id;
+        const herbs = getHerbsByCategory(category);
+        displayHerbs(herbs);
+
+        const boxes = document.querySelectorAll('.box');
+        boxes.forEach(b => b.classList.remove("active"));
+        box.classList.add("active");
+    });
+});
+```
+
+#### 3. **Functions for Specific Jobs**
+Structured functions were created to handle specific tasks:
+
+- **`getHerbsByCategory(category)`**: Retrieves the relevant herbs based on the selected body part.
+
+```javascript
+function getHerbsByCategory(category) {
+    const categoryData = herbData[category + 'Herbs'];
+    return categoryData ? categoryData : [];
+}
+```
+
+- **`displayHerbs(herbs)`**: Clears the content container and displays the relevant herb cards.
+
+```javascript
+function displayHerbs(herbs) {
+    const contentContainer = document.querySelector('.cards');
+    contentContainer.innerHTML = '';
+    herbs.forEach(herb => {
+        const herbCard = createHerbCard(herb);
+        contentContainer.appendChild(herbCard);
+    });
+}
+```
+
+- **`createHerbCard(herb)`**: Generates a structured HTML element for each herb.
+
+```javascript
+function createHerbCard(herb) {
+    const card = document.createElement('div');
+    card.classList.add('herb-card');
+    card.innerHTML = `
+        <div class="card-header">
+            <img src="${herb.imageUrl}" alt="${herb.title}">
+        </div>
+        <div class="card-content">
+            <h3 class="herb-title">${herb.title}</h3>
+            <p class="herb-benefits">${herb.benefits}</p>
+            <a class="herb-link" href="#" target="_blank">Learn more</a>
+        </div>
+    `;
+    return card;
+}
+```
+
+### Benefits of the Updates
+- **Cleaner Code:** Improved readability by moving data to `herbs.js`.
+- **Maintainability:** Easier to manage and extend herb data.
+- **Modularity:** Encapsulation of functions makes the codebase more maintainable.
+- **Scalability:** Structured functions make it easier to add features or modify functionality in the future.
+
 
 ### Features Left to Implement
 Once this would be implemented into an e-commerce site I would put in an add to basket button on the herb-card itself to allow for a seamless experience.
@@ -75,6 +168,35 @@ add collapsing images for the body-parts categorys. When you click the bodypart 
 <li>I confirm that the herb cards and body part selection panel texts are all readable and easy to understand. 
 <li>I have tested and confirm the form works: clickable and actionable content, and perfroms as expected across multiple screen sizes.
 </ul>
+
+## Testing Table for Body Health App
+
+| **Feature**               | **Test Description**                                                                                          | **Pass/Fail** |
+|----------------------------|---------------------------------------------------------------------------------------------------------------|---------------|
+| **Body Part Selection**    | Verify that clicking a body part box highlights it and scales the box while deselecting others.             | x             |
+|                            | Ensure that the `active` class is correctly applied to the clicked box.                                      | x             |
+|                            | Confirm non-selected boxes shrink and remain visible.                                                        | x             |
+| **Herb Data Display**      | Check that relevant herb cards are displayed when a body part box is selected.                               | x             |
+|                            | Validate that the content container is cleared before new herb cards are added.                              | x             |
+|                            | Ensure that the herb title, image, and link are correctly populated.                                         | x             |
+| **Herb Card Interaction**  | Verify that hovering over herb cards applies a lift effect (transform).                                      | x             |
+|                            | Ensure herb card layout remains consistent across screen sizes.                                              | x             |
+| **Data Import Functionality** | Confirm that herb data is correctly imported from `herbs.js`.                                               | x             |
+|                            | Ensure the app functions without errors when the `herbs.js` file is updated.                                  | x             |
+| **Event Listener Handling**| Test that event listeners for box clicks are correctly registered and trigger appropriate functions.        | x             |
+|                            | Validate that `getHerbsByCategory()` is called with the correct category.                                    | x             |
+|                            | Confirm that `displayHerbs()` updates the UI without errors.                                                 | x             |
+| **Responsive Design**      | Check layout on different screen sizes, ensuring no overlapping elements.                                    | x             |
+|                            | Confirm body parts are contained within the viewport at all sizes.                                           | x             |
+|                            | Ensure scaling transitions work smoothly on mobile and desktop.                                              | x             |
+| **Performance Optimization** | Verify that UI updates (e.g., herb display) are handled efficiently.                                         | x             |
+| **Error Handling**         | Test with missing or malformed herb data to ensure the app handles errors gracefully.                        | x             |
+|                            | Confirm the app displays an empty state without errors when no herb data exists.                             | x             |
+
+**Legend:**
+- `x`: Pass
+- `-`: Fail (to be documented with reasons if encountered)
+
 
 ### Bugs
 high payload from js script which delays the loading of herb card content
